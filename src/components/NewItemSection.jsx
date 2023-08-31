@@ -92,10 +92,11 @@ export default function NewItemSection() {
       </div>
 
       <div>
-        <div className="flex gap-8 justify-center py-12 mx-auto max-w-2xl">
+        <div className="hidden lg:flex gap-8 justify-center py-12 mx-auto max-w-2xl">
           <Swiper
             // pagination={pagination}
             modules={[Pagination]}
+            slidesPerView={3}
             breakpoints={{
               640: {
                 slidesPerView: 3,
@@ -107,7 +108,7 @@ export default function NewItemSection() {
                 slidesPerView: 5,
               },
             }}
-            className="flex justify-center gap-8"
+            // className="flex justify-center gap-8"
           >
             <SwiperSlide>
               <img src="assets/images/bg/new-item-sm2.png" alt="new-item-sm3" />
