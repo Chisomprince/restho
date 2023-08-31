@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,14 +14,30 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+html {
+  font-family: var(--Jost);
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: "Jost", sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  /* background-color: rgba(0, 2, 3, 0.331); */
+}
+
+.banner__hero {
+  background: linear-gradient(
+      98.3deg,
+      rgba(111, 73, 2, 0.2) 0.45%,
+      transparent 162.03%
+    ),
+    linear-gradient(269.66deg, #000203 0.28%, #09161d 99.7%);
+  position: relative;
 }
